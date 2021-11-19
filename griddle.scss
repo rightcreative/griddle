@@ -1,3 +1,4 @@
+$xsmall-break-point: 600px;
 $small-break-point: 768px;
 $medium-break-point: 960px;
 $large-break-point: 1200px;
@@ -22,19 +23,19 @@ $xlarge-break-point: 1500px;
     grid-column-gap: 15px;
   }
 
-  &.gc20, &.col-gap-20 {
+  &.cg20, &.col-gap-20 {
     grid-column-gap: 20px;
   }
   
-  &.gc30, &.col-gap-30 {
+  &.cg30, &.col-gap-30 {
     grid-column-gap: 30px;
   }
   
-  &.gc40, &.col-gap-40 {
+  &.cg40, &.col-gap-40 {
     grid-column-gap: 40px;
   }
   
-  &.gc50, &.col-gap-50 {
+  &.cg50, &.col-gap-50 {
     grid-column-gap: 50px;
   }
   
@@ -74,6 +75,62 @@ $xlarge-break-point: 1500px;
     margin: 0 auto 0 0;
   }
 
+  &.grid1, &.g1 {
+    grid-template-columns: 1fr;
+    
+    .col {
+      grid-column-end: 2;
+    }
+  }
+
+  &.grid2, &.g2 {
+    grid-template-columns: 1fr 1fr;
+    
+    .col {
+      grid-column-end: 3;
+    }
+  }
+
+  &.grid3, &.g3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    .col {
+      grid-column-end: 4;
+    }
+  }
+
+  &.grid4, &.g4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    .col {
+      grid-column-end: 5;
+    }
+  }
+
+  &.grid5, &.g5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    .col {
+      grid-column-end: 6;
+    }
+  }
+
+  &.grid6, &.g6 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    .col {
+      grid-column-end: 7;
+    }
+  }
+
+  &.grid7, &.g7 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    .col {
+      grid-column-end: 8;
+    }
+  }
+
   &.grid8, &.g8 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     
@@ -81,12 +138,28 @@ $xlarge-break-point: 1500px;
       grid-column-end: 9;
     }
   }
+
+  &.grid9, &.g9 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    .col {
+      grid-column-end: 10;
+    }
+  }
   
   &.grid10, &.g10 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     
     .col {
-      grid-column-end: 10;
+      grid-column-end: 11;
+    }
+  }
+
+  &.grid11, &.g11 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    .col {
+      grid-column-end: 12;
     }
   }
   
@@ -97,12 +170,28 @@ $xlarge-break-point: 1500px;
       grid-column-end: 13;
     }
   }
+
+  &.grid13, &.g13 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    .col {
+      grid-column-end: 14;
+    }
+  }
   
   &.grid14, &.g14 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     
     .col {
       grid-column-end: 15;
+    }
+  }
+
+  &.grid15, &.g15 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    .col {
+      grid-column-end: 16;
     }
   }
   
@@ -192,6 +281,88 @@ $xlarge-break-point: 1500px;
 
   &.w100 {
     width: 100%;
+  }
+
+  @media screen and (min-width: $xsmall-break-point) {
+    &.w5xs {
+      width: 5%;
+    }
+
+    &.w10xs {
+      width: 10%;
+    }
+
+    &.w15xs {
+      width: 15%;
+    }
+
+    &.w20xs {
+      width: 20%;
+    }
+
+    &.w25xs {
+      width: 25%;
+    }
+
+    &.w30xs {
+      width: 30%;
+    }
+
+    &.w35xs {
+      width: 35%;
+    }
+
+    &.w40xs {
+      width: 40%;
+    }
+
+    &.w45xs {
+      width: 45%;
+    }
+
+    &.w50xs {
+      width: 50%;
+    }
+
+    &.w55xs {
+      width: 55%;
+    }
+
+    &.w60xs {
+      width: 60%;
+    }
+
+    &.w65xs {
+      width: 65%;
+    }
+
+    &.w70xs {
+      width: 70%;
+    }
+
+    &.w75xs {
+      width: 75%;
+    }
+
+    &.w80xs {
+      width: 80%;
+    }
+
+    &.w85xs {
+      width: 85%;
+    }
+
+    &.w90xs {
+      width: 90%;
+    }
+
+    &.w95xs {
+      width: 95%;
+    }
+
+    &.w100xs {
+      width: 100%;
+    }
   }
   
   @media screen and (min-width: $small-break-point) {
@@ -526,6 +697,136 @@ $xlarge-break-point: 1500px;
     grid-column-start: 1;
     padding: 0;
     margin: 0;
+
+    @media screen and (min-width: $xsmall-break-point) {
+      &.s1xs {
+        grid-column-start: 1!important;
+      }
+      
+      &.s2xs {
+        grid-column-start: 2!important;
+      }
+      
+      &.s3xs {
+        grid-column-start: 3!important;
+      }
+      
+      &.s4xs {
+        grid-column-start: 4!important;
+      }
+      
+      &.s5xs {
+        grid-column-start: 5!important;
+      }
+      
+      &.s6xs {
+        grid-column-start: 6!important;
+      }
+      
+      &.s7xs {
+        grid-column-start: 7!important;
+      }
+      
+      &.s8xs {
+        grid-column-start: 8!important;
+      }
+      
+      &.s9xs {
+        grid-column-start: 9!important;
+      }
+      
+      &.s10xs {
+        grid-column-start: 10!important;
+      }
+      
+      &.s11xs {
+        grid-column-start: 11!important;
+      }
+      
+      &.s12xs {
+        grid-column-start: 12!important;
+      }
+
+      &.s13xs {
+        grid-column-end: 13!important;
+      }
+      
+      &.s14xs {
+        grid-column-end: 14!important;
+      }
+      
+      &.s15xs {
+        grid-column-end: 15!important;
+      }
+      
+      &.s16xs {
+        grid-column-end: 16!important;
+      }
+      
+      &.e1xs {
+        grid-column-end: 2!important;
+      }
+      
+      &.e2xs {
+        grid-column-end: 3!important;
+      }
+      
+      &.e3xs {
+        grid-column-end: 4!important;
+      }
+      
+      &.e4xs {
+        grid-column-end: 5!important;
+      }
+      
+      &.e5xs {
+        grid-column-end: 6!important;
+      }
+      
+      &.e6xs {
+        grid-column-end: 7!important;
+      }
+      
+      &.e7xs {
+        grid-column-end: 8!important;
+      }
+
+      &.e8xs {
+        grid-column-end: 9!important;
+      }
+      
+      &.e9xs {
+        grid-column-end: 10!important;
+      }
+      
+      &.e10xs {
+        grid-column-end: 11!important;
+      }
+      
+      &.e11xs {
+        grid-column-end: 12!important;
+      }
+      
+      &.e12xs {
+        grid-column-end: 13!important;
+      }
+      
+      &.e13xs {
+        grid-column-end: 14!important;
+      }
+      
+      &.e14xs {
+        grid-column-end: 15!important;
+      }
+      
+      &.e15xs {
+        grid-column-end: 16!important;
+      }
+      
+      &.e16xs {
+        grid-column-end: 17!important;
+      }
+    }
     
     @media screen and (min-width: $small-break-point) {
       &.s1s {

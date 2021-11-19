@@ -15,6 +15,19 @@
 
 <hr/>
 
+<h3>Class Definitions</h3>
+
+<p>
+  <strong>grid</strong> - Specifies a parent element to use css-grid.<br/>
+  <strong>grid#</strong> - (# can be any number from 1-16). Specifies how many columns the grid should have.<br/>
+  <strong>cg#</strong> - (# can be any number from 10-50, in increments of 10). Specifies the width of the gap between columns.<br/>
+  <strong>rg#</strong> - (# can be any number from 10-50, in increments of 10). Specifies the height of the gap between rows.<br/>
+  <strong>col</strong> - Specifies a child element as a column.<br/>
+  <strong>s#</strong> - (# can be any number from 1 to the number of columns specified in the parent element.) Specifies the starting column of a child element.<br/>
+  <strong>e#</strong> - (# can be any number from 1 to the number of columns specified in the parent element.) Specifies the ending column of a child element.<br/>
+</p>
+
+<hr/>
 <p>To use Griddle, start with a wrapper or parent element with the "grid" class added, as well as a class specifying how many columns you want your grid to have. Grids elements can have anywhere from 1 - 16 columns.</p>
 
 <p>Any child element inside this parent element will represent a "column". Each child element should have a class of <strong>col</strong>, along with classes specifying the start column and end column. By default, child elements will stretch from the first column to the last column, depending on how many columns you specified for your grid. So, if you specified a 16-column grid, child elements would stretch from column 1 to column 16.</p>
